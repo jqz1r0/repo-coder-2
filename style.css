@@ -512,6 +512,11 @@ footer section ul {
     /**---- Index Html ----**/
 
     /*!-- Hero Section --*/
+
+    .section-container {
+        height: 575px;
+    }
+
     .article-container h1 {
         font-size: 35px;
     }
