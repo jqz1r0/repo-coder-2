@@ -1,0 +1,542 @@
+/*!-- Font Familiy Nunito--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*!-- Selector Universal --*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*!-- Background--*/
+
+.bg-main {
+    background-color: dimgray;
+    padding: 0;
+}
+
+.bg-main h1,
+h2,
+h3,
+p {
+
+    margin: 0;
+}
+
+/*!-- NavBar --*/
+
+header {
+    background-color: rgb(36, 36, 36);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand:first-child {
+    font-size: 40px;
+    color: #70369B;
+    text-shadow: 0 0 6px rgba(112, 54, 155, 0.5),
+        0 0 12px rgba(112, 54, 155, 0.3);
+    font-weight: bold;
+}
+
+.navbar img {
+    height: 50px;
+    margin: 0 10px 0 20px;
+}
+
+.collapse {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px 0 10px;
+    border: solid;
+    border-color: #70369B;
+    border-radius: 10px;
+}
+
+.nav-item a {
+    padding: 4px;
+    text-align: center;
+    color: white;
+}
+
+.nav-item a:hover {
+    color: #70369B;
+    transform: scale(1, 1);
+}
+
+/*!-- Modificaciones del Main --*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    padding-block: 60px;
+}
+
+/** Index HTML **/
+
+/*!-- Hero Section --*/
+.section-container {
+    height: 800px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+}
+
+.article-container h1 {
+    font-size: 75px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.article-container p {
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+
+/*!-- Seccion Retos --*/
+.retos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/*!-- Tarjetas --*/
+.article-item {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid;
+    border-color: #70369B;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.article-item:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.article-item h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    color: rgb(180, 180, 180)
+}
+
+.article-item p {
+    margin: 0;
+    height: auto;
+    width: 90%;
+    font-size: 19px;
+    font-weight: lighter;
+    color: rgb(180, 180, 180)
+}
+
+.article-item div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.article-item div img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/**---- Portada Html ----**/
+
+.section-container {
+    align-items: center;
+}
+
+.portada-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.container-h2 {
+    display: flex;
+}
+
+.container-h2 h2 {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.imagen-portada img {
+    height: 500px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    max-width: 1000px;
+}
+
+.opciones .btn {
+    flex: 1 1 200px;
+    max-width: 300px;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-outline-primary {
+    border-color: #70369B;
+    color: #70369B;
+    font-family: 'Nunito', sans-serif;
+
+    &:hover {
+        background-color: #70369B;
+        color: white;
+    }
+}
+
+/*!-- Footer / Pie de Pagina --*/
+
+footer {
+    background-color: rgb(36, 36, 36);
+    margin: 0 50px 0 50px;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+footer p {
+    font-size: 10px;
+    padding: 20px 0 0 0;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: #70369B;
+    text-shadow: 0 0 6px rgba(112, 54, 155, 0.5),
+        0 0 12px rgba(112, 54, 155, 0.3);
+}
+
+.social-link img {
+    height: 35px;
+    width: 35px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link span {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+footer section ul li {
+    margin: auto;
+
+}
+
+footer section ul div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+footer section ul {
+    display: flex;
+}
+
+/*!-- Pantallas Grandes --*/
+@media (min-width: 1200px) {
+
+    /**---- Index Html ----**/
+
+    /*!-- Tarjetas --*/
+    .article-item {
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+}
+
+/*!-- Tablets y laptops pequeñas --*/
+@media (max-width: 1199px) {
+    /**---- Opening Html ----**/
+
+    .shigatsu iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+    /**---- Index Html ----**/
+
+    /*!-- Tarjetas --*/
+    .article-item {
+        flex: 1 1 45%;
+        max-width: 100%;
+    }
+}
+
+/*!-- Tablets / Celulares Grandes --*/
+@media (max-width: 834px) {
+
+    /**---- Opening Html ----**/
+
+    .shigatsu iframe {
+        width: 550px;
+        height: 300px;
+    }
+
+    /**---- Portada Html ----**/
+
+    .portada-container {
+        display: flex;
+        flex: 0 1 auto;
+        width: 80%;
+        gap: 25px;
+    }
+
+    /*!-- Content Size --*/
+    .container-h2 h2 {
+        font-size: 24.8px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: auto;
+    }
+
+    .imagen-portada img {
+        height: 465px;
+    }
+
+    .opciones {
+        padding: 10px;
+    }
+
+    .opciones .btn {
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    /**---- Index Html ----**/
+
+    /*!-- Hero Section --*/
+    .article-container h1 {
+        font-size: 55px;
+    }
+
+    .article-container p {
+        font-size: 24px;
+    }
+
+    /*!-- Tarjetas --*/
+    .retos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-item {
+        width: 90%;
+        flex: 1 1 auto;
+    }
+
+    .article-item p {
+        font-size: 18px;
+    }
+
+    .article-item h3 {
+        font-size: 28px;
+    }
+}
+
+/*!-- Celulares medianos a chicos --*/
+@media (max-width: 600px) {
+
+    /**---- Opening Html ----**/
+
+    /*!-- Video Content Size --*/
+    .shigatsu iframe {
+        width: 320px;
+        height: 190px;
+    }
+
+    /**---- Portada Html ----**/
+
+    .portada-container {
+        gap: 60px;
+    }
+
+    /*!-- Content Size --*/
+    .container-h2 h2 {
+        font-size: 19px;
+        letter-spacing: 2px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .imagen-portada img {
+        height: 370px;
+    }
+
+    .opciones .btn {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    /**---- Index Html ----**/
+
+    /*!-- Hero Section --*/
+    .article-container h1 {
+        font-size: 45px;
+    }
+
+    .article-container p {
+        font-size: 20px;
+    }
+
+    /*!-- Tarjetas --*/
+    .article-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .article-item h3 {
+        font-size: 22px;
+    }
+
+    .article-item p {
+        font-size: 14px;
+    }
+
+    /*!-- Footer --*/
+    footer {
+        margin: 0;
+    }
+
+    .social-link img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .social-link span {
+        font-size: 12px;
+    }
+
+}
+
+/*!-- Ajustes para pantallas muy pequeñas --*/
+@media (max-width: 400px) {
+
+    /**---- Portada Html ----**/
+
+    .portada-container {
+        gap: 70px;
+    }
+
+
+    .opciones {
+        padding: 0;
+    }
+
+    /**---- Index Html ----**/
+
+    /*!-- Hero Section --*/
+    .article-container h1 {
+        font-size: 35px;
+    }
+
+    .article-container p {
+        font-size: 13.5px;
+    }
+
+    /*!-- Tarjetas --*/
+    .article-item h3 {
+        font-size: 20px;
+    }
+
+    .article-item p {
+        font-size: 12px;
+    }
+
+    /*!-- Footer --*/
+    .social-link img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .social-link span {
+        font-size: 10px;
+    }
+
+}
